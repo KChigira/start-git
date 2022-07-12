@@ -60,6 +60,7 @@ $ git init
 ```
 3.githubのレポジトリと結びつける。
 ```
+$ git remote add origin  https://github.com/username/repository.git
 $ git pull origin main
 ```
 “README.md”,”LICENSE”がフォルダ内に追加される<br>
