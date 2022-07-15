@@ -82,6 +82,7 @@ githubのレポジトリにローカルのソースコードが反映される�
 $ cd ~/git/xxxxxx
 git config --local user.name xxxxx(githubに登録した自分の名前)
 git config --local user.email xxx@mail.address(githubに登録した自分のメールアドレス)
+git config --local "url.git@github.com:.pushinsteadof" "https://github.com/"
 
 ```
 とする<br>
