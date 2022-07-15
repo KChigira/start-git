@@ -32,7 +32,7 @@ git config --global init.defaultbranch main
 ```
 $ mkdir ~/.ssh
 $ cd ~/.ssh
-$ ssh -keygen -t rsa
+$ ssh-keygen -t rsa
 $ cat id_rsa.pub
 ```
 
@@ -74,3 +74,16 @@ $ git push origin main
 githubのレポジトリにローカルのソースコードが反映される。<br>
 <br>
 ソースコードを更新したら4を繰り返す。<br>
+<br>
+##別のPCで作業をする場合
+↑の１〜３を行う<br>
+共有のPCの場合、初期設定は
+```
+$ cd ~/git/xxxxxx
+git config --local user.name xxxxx(githubに登録した自分の名前)
+git config --local user.email xxx@mail.address(githubに登録した自分のメールアドレス)
+
+```
+とする<br>
+秘密鍵の生成の際、パスワードを設定する。<br>
+
