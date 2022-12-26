@@ -90,17 +90,13 @@ $ git config --local "url.git@github.com:.pushinsteadof" "https://github.com/"
 
 <br>
 秘密鍵の名前がデフォルトだと、他人の操作によって上書きされる恐れがあるため、共有PCのときは名前を変更したほうがいいかもしれない。<br>
-ただし、名前を変更した場合、そのままでは認識されないので、以下の処理を実行する。<br>
+ただし、名前を変更した場合、そのままでは認識されないので、以下の処理を実行する。
 ```
 $ cd ~/.ssh
 $ touch config
 $ vi config
- 
 Host github github.com
   HostName github.com
   IdentityFile ~/.ssh/（秘密鍵ファイル名）
   User git
-
-
 ```
-
